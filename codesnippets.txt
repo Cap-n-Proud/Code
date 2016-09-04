@@ -1,0 +1,1 @@
+sudo dd if=/home/paolo/Downloads/ubuntu-15.10-mate-odroid-xu3-20160114.img of=/dev/sdc bs=8M status=progress
