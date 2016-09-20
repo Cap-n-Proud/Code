@@ -106,6 +106,7 @@ sudo apt-get install -y mediainfo
 sudo apt-get install -y subversion
 sudo apt-get install -y screen tmux
 
+echo -e "***** Installing newznab  *****" 
 sudo gpg --keyserver  hkp://keys.gnupg.net --recv-keys B9D8946B16932B16
 sudo gpg -a --export 16932B16 | sudo apt-key add -
 sudo sh -c "echo \"deb http://ppa.launchpad.net/builds/sphinxsearch-daily/ubuntu precise main \ndeb-src http://ppa.launchpad.net/builds/sphinxsearch-daily/ubuntu precise main\" >> /etc/apt/sources.list"
