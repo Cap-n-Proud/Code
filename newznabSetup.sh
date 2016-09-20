@@ -81,9 +81,9 @@ fi
 
 echo -e "***** Updating system packages *****" 
 {
-sudo apt-get autoremove && sudo apt-get clean all && sudo apt-get autoclean all
+sudo apt-get -y autoremove && sudo apt-get -y clean all && sudo apt-get -y autoclean all
 sudo apt-get -f install
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get -y upgrade
 
 } #>> log.txt
