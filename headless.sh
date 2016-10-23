@@ -1,3 +1,5 @@
+#!/bin/bash
+
 apt-get autoremove -y mono-common
 apt-get autoremove -y ttf-arabeyes ttf-arphic-uming ttf-indic-fonts-core ttf-kochi-gothic ttf-kochi-mincho ttf-lao ttf-malayalam-fonts ttf-thai-tlwg ttf-unfonts-core
 apt-get autoremove -y ppp pppconfig pppoeconf wvdial
