@@ -1,0 +1,16 @@
+portsnap fetch update && portupgrade -a
+
+sudo pkg install apache24
+sudo sysrc apache24_enable=yes
+sudo service apache24 start
+ifconfig vtnet0 | grep "inet " | awk '{ print $2 }'
+
+pkg remove mysql56-server mysql56-client
+rm -rf /var/db/mysql/
+pkg install databases/mariadb100-server
+sudo sysrc mysql_enable=yes
+service mysql-server start
+sudo mysql_secure_installation
+sudo pkg install mod_php70 php70-mysql php70-mysqli
+sudo cp /usr/local/etc/php.ini-production /usr/local/etc/php.ini
+rehash
