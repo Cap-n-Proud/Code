@@ -36,3 +36,5 @@ nano /usr/local/etc/apache24/Includes/php.conf
 
 nano /usr/local/etc/apache24/httpd.conf
 
+nano /usr/local/www/apache24/data/info.php
+<?php phpinfo(); ?>
