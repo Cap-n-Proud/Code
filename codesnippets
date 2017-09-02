@@ -1,3 +1,6 @@
+reursively change chatracters in fiels and dir names find ./Photos/ -depth -name "* *" -execdir rename 's/ /_/g' "{}" \;
+
+
 flatten folders find /dir1 -mindepth 2 -type f -exec mv -f '{}' /dir1 ';'
 
 
