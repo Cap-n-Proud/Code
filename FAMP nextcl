@@ -20,6 +20,7 @@ pkg install mod_php70 php70-mysqli
 sysrc php_fpm_enable="YES"
 pkg install databases/mariadb102-server
 sysrc mysql_enable=yes
+sysrc redis_enable="YES"
 service mysql-server start
 mysql_secure_installation
 cp /usr/local/etc/php.ini-production /usr/local/etc/php.ini
